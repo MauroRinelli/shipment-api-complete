@@ -38,11 +38,25 @@
             gap: 20px;
         }
 
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
         .logo {
             height: 50px;
             width: 50px;
             border-radius: 50%;
             object-fit: cover;
+            background: transparent;
+        }
+
+        .header-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #ffffff;
+            margin: 0;
         }
 
         .nav-center {
@@ -380,6 +394,10 @@
                 width: 40px;
             }
 
+            .header-title {
+                font-size: 1em;
+            }
+
             .nav-center {
                 order: 3;
                 width: 100%;
@@ -398,7 +416,10 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <img src="solespress_logo.png" alt="Solespress Logo" class="logo">
+                <div class="logo-section">
+                    <img src="solespress_logo.png" alt="Solespress Logo" class="logo">
+                    <span class="header-title">Gestione Spedizioni</span>
+                </div>
                 <div class="nav-center">
                     <button class="tab active" onclick="showTab('dashboard')">Dashboard</button>
                     <button class="tab" onclick="showTab('create')">Nuova Spedizione</button>
